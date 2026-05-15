@@ -45,6 +45,8 @@ empirical one. After rescaling all ratios fall in `\[0.93, 0.99]`.
 with the historical equally-weighted portfolio: mean, sd, and 1%
 quantile match in order of magnitude, confirming the model is coherent
 with the data.
+
+![Simulated portfolio density vs Normal](output/confronto_normale.png)
 * **Known limitation: tail dependence.** The simulated 99%-VaR is slightly
 less severe than the historical one. This is structural: the Gaussian
 copula does not capture tail dependence (joint crashes). This is the
@@ -119,6 +121,7 @@ install.packages(c("VarianceGamma", "mvtnorm", "writexl"))
 |Portfolio daily sd|0.01124|
 |VaR 95% (1-day)|-0.01774|
 |VaR 99% (1-day)|-0.02846|
+![Simulated portfolio histogram](output/istogramma_portafoglio.png)
 
 Marginal fit diagnostic (sd ratio model / empirical) — all assets in
 `\[0.93, 0.99]`, confirming a coherent fit.
