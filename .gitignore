@@ -1,21 +1,24 @@
-# --- Python ---
-venv/
-.venv/
-__pycache__/
-*.pyc
-*.pyo
-.ipynb_checkpoints/
-
-# --- R / RStudio ---
+# R / RStudio session files
 .Rhistory
 .RData
-.Rproj.user/
 .Ruserdata
+.Rproj.user/
 *.Rproj
 
-# --- OS / editor ---
+# OS/editor files
 .DS_Store
 Thumbs.db
-.idea/
 .vscode/
-*.swp
+.idea/
+
+# Raw or licensed market data
+*.xlsx
+*.xls
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Locally generated analytical outputs
+results/
