@@ -14,6 +14,7 @@ Thumbs.db
 # Raw or licensed market data
 *.xlsx
 *.xls
+data/*.csv
 
 # Temporary files
 *.tmp
