@@ -4,6 +4,12 @@ University coursework in **financial-market statistics and risk modelling**, cov
 
 The repository consolidates two coursework projects into one research-style codebase. The emphasis is on statistical inference, dependence modelling and tail-risk measurement rather than on trading signals.
 
+## Authorship
+
+This repository is based on university group coursework completed by a **four-person team**, including me. The public version preserves the analytical scope of the original coursework while reorganising the code for portfolio presentation, excluding non-redistributable raw data and incorporating a small number of technical corrections identified during a later review.
+
+GitHub's contributor count reflects the publication history of this repository and should **not** be interpreted as sole authorship of the original coursework.
+
 ## What is implemented
 
 ### 1. HAC inference and Monte Carlo coverage
