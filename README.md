@@ -1,6 +1,6 @@
 # Financial Market Risk Modelling
 
-Group coursework in **R** on statistical inference, dependence modelling and portfolio tail risk. The original assignment has three main analytical blocks: Newey-West inference and Monte Carlo coverage, Variance-Gamma marginals with a Gaussian copula, and a CreditRisk+-style loss simulation with Student-t dependence.
+Group coursework in **R** on statistical inference, dependence modelling and portfolio tail risk. The original work has three main blocks: Newey-West inference and Monte Carlo coverage, Variance-Gamma marginals with a Gaussian copula, and a CreditRisk+-style loss simulation with Student-t dependence.
 
 The public repository reorganises the scripts and omits raw market-data files. It does not turn the coursework into a trading project or claim that the credit block was calibrated to a real loan book.
 
@@ -33,6 +33,10 @@ This block starts from **20 synthetic credit buckets**. Their expected default c
 The simulation compares aggregate-loss distributions over several dependence levels, including a comonotonic benchmark, and reports VaR and Tail Conditional Expectation (TCE). The result to take away is qualitative and model-specific: in this synthetic setup, stronger dependence produces materially heavier portfolio loss tails.
 
 ![VaR versus dependence](figures/credit-risk/var_vs_dependence.png)
+
+## Output archive
+
+The repository contains **all 19 PNG outputs** from the coursework archive. They are indexed in [`figures/README.md`](figures/README.md). The three images above are only the compact selection shown on the landing page.
 
 ## Repository layout
 
