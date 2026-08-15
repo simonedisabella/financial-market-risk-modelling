@@ -10,7 +10,7 @@ The public repository reorganises the scripts and omits raw market-data files. I
 
 The first block implements Newey-West long-run variance estimation with Bartlett weights and uses it to build confidence intervals for the mean, standard deviation and left-tail VaR. It then fits an AR(1)-GARCH(1,1) model to Amazon returns and runs Monte Carlo experiments under Student-t and standardized chi-square innovations.
 
-The point of the simulation is **coverage and interval width**: how dependence, sample size, innovation shape and GARCH persistence affect inference, and how much is lost by using an i.i.d. standard error when the simulated process is dependent.
+The simulation focuses on **coverage and interval width**: how dependence, sample size, innovation shape and GARCH persistence affect inference, and how much is lost by using an i.i.d. standard error when the simulated process is dependent.
 
 ![VaR coverage](figures/inference/coverage_var.png)
 
@@ -30,7 +30,7 @@ The `vgFit()` step is run on returns multiplied by 100 for numerical stability. 
 
 This block starts from **20 synthetic credit buckets**. Their expected default counts and variances are deterministic coursework assumptions, chosen because no real credit-portfolio dataset was available. Gamma-Poisson mixing gives negative-binomial marginal default-count distributions; a Student-t copula is then used to impose cross-bucket dependence.
 
-The simulation compares aggregate-loss distributions over several dependence levels, including a comonotonic benchmark, and reports VaR and Tail Conditional Expectation (TCE). The result to take away is qualitative and model-specific: in this synthetic setup, stronger dependence produces materially heavier portfolio loss tails.
+The simulation compares aggregate-loss distributions over several dependence levels, including a comonotonic benchmark, and reports VaR and Tail Conditional Expectation (TCE). In this synthetic setup, stronger dependence produces materially heavier portfolio loss tails; this is a model-specific result, not an empirical credit calibration.
 
 ![VaR versus dependence](figures/credit-risk/var_vs_dependence.png)
 
@@ -66,6 +66,6 @@ Raw coursework inputs are not redistributed. The simulation sections are reprodu
 
 ## Authorship
 
-This repository contains **group coursework**. Publication under my account is for portfolio presentation and does not imply sole authorship.
+This repository contains **group coursework** and does not imply sole authorship.
 
 Academic modelling on historical/synthetic data, not a production risk engine or live investment record.
